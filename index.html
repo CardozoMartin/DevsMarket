@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="DevsMarket | Todo lo que buscas en un solo lugar">
+    <meta name="author" content="Bianca,Mauricio,Gabriel,Santiago,Cardozo Martin">
+    <meta name="keywords" content="tienda, celulares, computadora, herramientas, electrodomestivos, indumentaria,juegos">
+    <title>Dev$Market</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/48c3d8cc55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="./img/logoSinFondo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleIndex.css" />
+  </head>
+
+  <body>
+    <header class="fixed mb-5">
+      <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navOff">
+          <div class="searchNav">
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2 hover-Search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+
+          <div class="text-center d-flex">
+            <div>
+              <h2 class="mx-5 fFami">Dev<span class="iconColor">$</span>Market</h2>
+            </div>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown m-2">
+                <button
+                  class="nav-link active d-inline dropdown-toggle  btnIcon btn fs-4"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-current="page"
+                  href="#"
+                >INICIO</button
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  <li><a class="dropdown-item" href="#">Iniciar Session</a></li>
+                  <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                </ul>
+              </li>
+              <li class="nav-item m-2 iconModal">
+                <div class="dropdown viewerOff">
+                  <button
+                    type="button"
+                    class="btn btnIcon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#inicioModal"
+                  >
+                    <i class="bi bi-person-circle fs-3"></i>
+                  </button>
+                </div>
+              </li>
+              <li class="nav-item m-2 iconModal">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mapModalLabel"
+                >
+                  <i class="bi bi-geo-alt-fill px-2 fs-3"></i>
+                </button>
+              </li>
+              <li class="nav-item m-3">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#likeModal"
+                >
+                  <i class="fa-sharp fa-solid fa-heart px-2 fs-3"></i>
+                </button>
+              </li>
+              <li class="nav-item m-3">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buyModal"
+                >
+                  <i class="fa-sharp fa-solid fa-cart-shopping px-2 fs-3"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Segunda Linea del nav -->
+        </nav>
+        <article id="secondNav">
+          <ul class="nav justify-content-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Celulares</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/celulares.html"
+                    >Samsung</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/celulares.html"
+                    >Motorola</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/celulares.html"
+                    >Alcatel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/celulares.html"
+                    >Noblex</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/celulares.html"
+                    >Iphone</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/celulares.html"
+                    >Redmi</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/celulares.html"
+                    >Todas las Marcas</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Computadoras</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="#">Lenovo</a></li>
+                <li><a class="dropdown-item focusItem" href="#">Apple</a></li>
+                <li><a class="dropdown-item focusItem" href="#">Samsung</a></li>
+                <li><a class="dropdown-item focusItem" href="#">Asus</a></li>
+                <li><a class="dropdown-item focusItem" href="#">Lg</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="./pages/electrodomestivos.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Electrodomesticos</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/electrodomestivos.html"
+                    >Heladeras</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/electrodomestivos.html"
+                    >Cocina</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/electrodomestivos.html"
+                    >Larropas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/electrodomestivos.html"
+                    >Calefaccion</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./pages/electrodomestivos.html"
+                    >Termotanques</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Muebles</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="#">Comedor</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#">Sillones</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="#">Roperos</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#">Escritorios</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Indumentaria</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="#">Remeras</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#">Pantalones</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="#">Camisas</a></li>
+                <li><a class="dropdown-item focusItem" href="#">Gorras</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#">Zapatillas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Herramientas</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="#">Taladro</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#">Amoladora</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="#">Llaves</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#">Escaleras</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="#">Mar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Juegos</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item focusItem" href="#">Juegos de Ps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#">Consolas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#"
+                    >Accesorios Gamers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="#"
+                    >Juegos de Mesas</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <article class="navbar navbar-expand-lg bg-body-tertiary" id="navOn">
+          <article>
+            <nav class="navbar bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand   fs-1 " href="#"
+                  ><img src="./img/logoSinFondo - copia.png" alt="Logo de DevsMarket"></a
+                >
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#inicioModal"
+                  ><i class="bi bi-person-circle fs-1"></i
+                ></a>
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btnIcon justify-content-end"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mapModalLabel"
+                  ><i class="bi bi-geo-alt-fill fs-1"></i
+                ></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      Dev<span class="iconColor">$</span>Market
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mobilMenu">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./pages/celulares.html"
+                          >Celulares</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./pages/computadoras.html"
+                          >Computadoras</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./pages/electrodomestivos.html"
+                          >Electrodomesticos</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./pages/muebles.html"
+                          >Muebles</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./pages/indumentaria.html"
+                          >Indumentaria</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./pages/herramientas.html"
+                          >Herramientas</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./pages/juegos.html"
+                          >Juegos</a
+                        >
+                      </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-success" type="submit">
+                        Search
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </article>
+        </article>
+      </section>
+    </header>
+
+    <main>
+      <!-- Primer video -->
+      <section>
+        <div>
+          <p class="infoVideo text-secondary text-center fs-3">
+            ¡La primera vez!
+            <br />
+            Venta de almacén el 4 de julio: hasta un 60% de descuento.
+            <br />
+            VEHÍCULOS
+            <br />
+            Muebles al aire libre
+            <br />
+            Cocina
+            <br />
+            Ropa de cama y baño
+            <br />
+            Decoración y mucho más...
+          </p>
+        </div>
+        <video
+          class="videoAuto prm-video w-100"
+          muted=""
+          loop=""
+          autoplay=""
+          data-content-type="video"
+          poster="//cb.scene7.com/is/image/Crate/cb_dHP_20230622_WarehouseSale_Fallback?wid=1920&amp;qlt=80&amp;op_sharpen=1"
+          data-video="0"
+        >
+          <source src="./img/videos/visionPro.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <!-- Segunda imagen -->
+      <section>
+        <p class="textoYaris fs-1 mt-5 text-center">
+          Toyota inició la venta del nuevo Yaris Cross Hybrid
+        </p>
+        <button
+          class="botonYaris d-flex align-items-center"
+          type="button"
+          class="btn btn-secondary btn-lg"
+        >
+          Ver más información
+        </button>
+        <img class="w-100 mb-5" src="./img/videos/toyota.mkv" />
+      </section>
+      <!-- Métodos de pago -->
+      <!-- Primera sección -->
+      <article class="container">
+        <section class="row">
+          <section class="col-12 col-md-6 col-lg-3 bg-light ps-5">
+            <div class="d-flex my-3">
+              <i
+                class="fa-regular fa-credit-card fs-4 pe-2 mt-2"
+                style="color: #ff0048"
+              ></i>
+              <p class="mt-1">
+                Tarjeta de crédito
+                <br />
+                <span class="textoMetodosPagos fs-1x"
+                  >Ver promociones bancarias</span
+                >
+              </p>
+            </div>
+          </section>
+          <!-- Segunda sección -->
+          <section class="col-12 col-md-6 col-lg-3 bg-light ps-5">
+            <div class="d-flex my-3">
+              <i
+                class="fa-solid fa-credit-card fs-4 pe-2 mt-2"
+                style="color: #ff0048"
+              ></i>
+              <p class="mt-1">
+                Tarjeta de débito
+                <br />
+                <span class="textoMetodosPagos fs-1x">Ver más</span>
+              </p>
+            </div>
+          </section>
+          <!-- Tercera sección -->
+          <section class="col-12 col-md-6 col-lg-3 bg-light ps-5">
+            <div class="d-flex my-3">
+              <i
+                class="fa-solid fa-hand-holding-dollar fs-4 pe-2 mt-2"
+                style="color: #ff0048"
+              ></i>
+              <p class="mt-1">
+                Cuotas sin tarjeta
+                <br />
+                <span class="textoMetodosPagos fs-1x">Ver más información</span>
+              </p>
+            </div>
+          </section>
+          <!-- Cuarta sección -->
+          <section class="col-12 col-md-6 col-lg-3 bg-light ps-5">
+            <div class="d-flex my-3">
+              <i
+                class="fa-solid fa-money-check-dollar fs-4 pe-2 mt-2"
+                style="color: #ff0048"
+              ></i>
+              <p class="mt-1">
+                Efectivo
+                <br />
+                <span class="textoMetodosPagos fs-1x">Ver más</span>
+              </p>
+            </div>
+          </section>
+        </section>
+      </article>
+<div class="d-flex justify-content-end position-sticky top-0 ">
+  <button class="btn bg-body-secondary  top-0 z-3" >soy un boton</button>
+</div>
+      
+    </main>
+
+    <footer></footer>
+
+    <section id="Modales">
+      <article>
+        <div id="modalDelInicio">
+          <div
+            class="modal fade"
+            id="inicioModal"
+            tabindex="-1"
+            aria-labelledby="inicioModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="inicioModalLabel">
+                    <h2 class="fw-bold text-center pt-5 mb-5">Bievenido</h2>
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <div class="row">
+                      <div class="col">
+                        <form action="">
+                          <div class="">
+                            <label for="email" class="form-label">
+                              Correo Electronico</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="password" class="form-label">
+                              Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control mb-2"
+                              name="password"
+                            />
+                            <span class=""
+                              ><a href="#">Recuperar password</a></span
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="checkbox"
+                              name="conexion"
+                              class="form-check-input"
+                            />
+                            <label for="conexion" class="form-check-label"
+                              >Mantenerme conectado</label
+                            >
+                          </div>
+
+                          <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                              Iniciar sesion
+                            </button>
+                          </div>
+                          <div class="my-3">
+                            <span
+                              >No tienes cuenta ?
+                              <a href="#">Registrate</a></span
+                            >
+                          </div>
+                        </form>
+                        <!-- Login con redes sociales -->
+                        <div class="container w-100 my-5">
+                          <div class="row text-center">
+                            <div class="col-12">Inciar Sesion</div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="d-flex justify-content-center gap-2">
+                                <button
+                                  class="btn btn-outline-primary my-1"
+                                  id="redesButton"
+                                >
+                                  <div class="row align-items-center">
+                                    <div class="col-2">
+                                      <i class="bi bi-facebook logoFace"></i>
+                                    </div>
+                                    <div
+                                      class="col-10 fw-bold mt-3 align-content-center"
+                                    >
+                                      <p class="">Facebook</p>
+                                    </div>
+                                  </div>
+                                </button>
+
+                                <button
+                                  class="btn btn-outline-danger my-1"
+                                  id="redesButton"
+                                >
+                                  <div class="row align-items-center">
+                                    <div class="col-2">
+                                      <i class="bi bi-google logoFace"></i>
+                                    </div>
+                                    <div
+                                      class="col-10 fw-bold mt-3 align-content-center"
+                                    >
+                                      <p class="">Google</p>
+                                    </div>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Login -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeUbicacion">
+          <div
+            class="modal fade"
+            id="mapModalLabel"
+            tabindex="-1"
+            aria-labelledby="mapModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="mapModalLabel">Ubicacion</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h3>San miguel de tucuman, 25 de mayo 755</h3>
+                  <div>
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe
+                          width="820"
+                          height="560"
+                          id="gmap_canvas"
+                          src="https://maps.google.com/maps?q=tucuman%2C+25+de+mayo+775&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                          frameborder="0"
+                          scrolling="no"
+                          marginheight="0"
+                          marginwidth="0"
+                        ></iframe
+                        ><a href="https://textcaseconvert.com/"></a><br />
+                        <style>
+                          .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 360px;
+                            width: 420px;
+                          }</style
+                        ><a href="https://www.embedmaps.co"
+                          >embed google maps api</a
+                        >
+                        <style>
+                          .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 360px;
+                            width: 420px;
+                            border-radius: 50%;
+                          }
+                        </style>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeLikes">
+          <div
+            class="modal fade"
+            id="likeModal"
+            tabindex="-1"
+            aria-labelledby="likeModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="likeModalLabel">
+                    Agregue a favoritos
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <h2>Algo te llama la atencion ?</h2>
+                    <p>Guardalo en favoritos</p>
+                    <p>Crea un panel de estados de animo</p>
+                    <p>verlo todo junto</p>
+                    <img
+                      src="https://images.crateandbarrel.com/is/image/Crate/CB_HDR-201707_Mdbrd-dd?fmt=png-alpha"
+                      alt=""
+                    />
+                    <p>
+                      Inicia sesion para ver todo lo que te gusta
+                      <button type="button" class="btn btn-secondary">
+                        Iniciar Session
+                      </button>
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeCompras">
+          <div
+            class="modal fade"
+            id="buyModal"
+            tabindex="-1"
+            aria-labelledby="buyModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="buyModalLabel">
+                    Agregar al Carrito
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Le faltan articulos en su carrito ?</h3>
+                  <p>
+                    <a href="#">Registrese</a> para ver los elementos que puede
+                    haber agregado usando otra computadora o dispositivo
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    Ver Carrito
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+body{
+    background-color: #1D2125;
+}
+
+.infoVideo{
+    padding-left: 10em;
+    position: absolute;
+    z-index: 1;
+}
+
+.textoMetodosPagos{
+    color: #ff0048;
+}
+
+.textoYaris{
+    padding-left: 10em;
+    position: absolute;
+    z-index: 4;
+}
+
+.botonYaris{
+    position: absolute;
+    z-index: 1
+}

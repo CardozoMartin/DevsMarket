@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/48c3d8cc55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="fixed mb-5">
+      <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navOff">
+          <div class="searchNav">
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2 hover-Search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+
+          <div class="text-center d-flex">
+            <div>
+              <h2 class="mx-5 fFami">Dev<span class="iconColor">$</span>Market</h2>
+            </div>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown m-2">
+                <button
+                  class="nav-link d-inline dropdown-toggle  btnIcon btn fs-4"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-current="page"
+                  href="#"
+                >INICIO</button
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  <li><a class="dropdown-item" href="#">Iniciar Session</a></li>
+                  <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                </ul>
+              </li>
+              <li class="nav-item m-2 iconModal">
+                <div class="dropdown viewerOff">
+                  <button
+                    type="button"
+                    class="btn btnIcon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#inicioModal"
+                  >
+                    <i class="bi bi-person-circle fs-3"></i>
+                  </button>
+                </div>
+              </li>
+              <li class="nav-item m-2 iconModal">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mapModalLabel"
+                >
+                  <i class="bi bi-geo-alt-fill px-2 fs-3"></i>
+                </button>
+              </li>
+              <li class="nav-item m-3">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#likeModal"
+                >
+                  <i class="fa-sharp fa-solid fa-heart px-2 fs-3"></i>
+                </button>
+              </li>
+              <li class="nav-item m-3">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buyModal"
+                >
+                  <i class="fa-sharp fa-solid fa-cart-shopping px-2 fs-3"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Segunda Linea del nav -->
+        </nav>
+        <article id="secondNav">
+          <ul class="nav justify-content-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Celulares</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Samsung</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Motorola</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Alcatel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Noblex</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Iphone</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Redmi</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Todas las Marcas</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="./computadoras.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Computadoras</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Lenovo</a></li>
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Apple</a></li>
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Samsung</a></li>
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Asus</a></li>
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Lg</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  dropdown-toggle activeItems"
+                aria-current="page"
+                href="./electrodomestivos.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Electrodomesticos</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Heladeras</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Cocina</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Larropas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Calefaccion</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Termotanques</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  dropdown-toggle activeItems"
+                aria-current="page"
+                href="./muebles.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Muebles</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="./muebles.html">Comedor</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./muebles.html">Sillones</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="./muebles.html">Roperos</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./muebles.html">Escritorios</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle activeItems"
+                aria-current="page"
+                href="./indumentaria.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Indumentaria</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="./indumentaria.html">Remeras</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./indumentaria.html">Pantalones</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="./indumentaria.html">Camisas</a></li>
+                <li><a class="dropdown-item focusItem" href="./indumentaria.html">Gorras</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./indumentaria.html">Zapatillas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  dropdown-toggle activeItems"
+                aria-current="page"
+                href="./herramientas.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Herramientas</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="./herramientas.html">Taladro</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./herramientas.html">Amoladora</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="./herramientas.html">Llaves</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./herramientas.html">Escaleras</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="./herramientas.html">Mar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  dropdown-toggle activeItems"
+                aria-current="page"
+                href="./juegos.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Juegos</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item focusItem" href="./juegos.html">Juegos de Ps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./juegos.html">Consolas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./juegos.html"
+                    >Accesorios Gamers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./juegos.html"
+                    >Juegos de Mesas</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <article class="navbar navbar-expand-lg bg-body-tertiary" id="navOn">
+          <article>
+            <nav class="navbar bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand   fs-1 " href="../index.html"
+                  >Dev<span class="iconColor ">$</span>Market</a
+                >
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#inicioModal"
+                  ><i class="bi bi-person-circle fs-1"></i
+                ></a>
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btnIcon justify-content-end"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mapModalLabel"
+                  ><i class="bi bi-geo-alt-fill fs-1"></i
+                ></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      Dev<span class="iconColor">$</span>Market
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mobilMenu">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./celulares.html"
+                          >Celulares</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./computadoras.html"
+                          >Computadoras</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./electrodomestivos.html"
+                          >Electrodomesticos</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./muebles.html"
+                          >Muebles</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./indumentaria.html"
+                          >Indumentaria</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./herramientas.html"
+                          >Herramientas</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./juegos.html"
+                          >Juegos</a
+                        >
+                      </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-success" type="submit">
+                        Search
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </article>
+        </article>
+      </section>
+    </header>
+
+    <main >
+      <section >
+        <article class="container justify-content-center">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide mb-3"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner carruselTam">
+              <div class="carousel-item active">
+                <img
+                  src="../img/Banners/electrodomesticos1.jpg"
+                  class="d-block w-100 imgSize"
+                  alt="Herrameintas"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/Banners/electrodomesticos2.jpg"
+                  class="d-block w-100"
+                  alt="Herrameintas"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/Banners/electrodomesticos3.jpg"
+                  class="d-block w-100"
+                  alt="Herrameintas"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+      </section>
+      <section class="container ">
+        <article class="row justify-content-end box">
+          
+          <div class="col-lg-3 col-xs-0">
+            <div class="card position-sticky  cardPosition ">
+              <div class="card">
+                <div class="card-body">
+                  <p class="text-success">
+                    <i class="bi bi-box2"></i> Envio Gratis a todo el pais
+                  </p>
+                  <h6 class="lead">Hasta 12 Cuotas sin tarjeta</h6>
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/51b446b0-571c-11e8-9a2d-4b2bd7b1bf77-m.svg"
+                    alt=""
+                  />
+                  <h6 class="lead">Tarjetas de Credito</h6>
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/a5f047d0-9be0-11ec-aad4-c3381f368aaf-m.svg"
+                    alt=""
+                  />
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/992bc350-f3be-11eb-826e-6db365b9e0dd-m.svg"
+                    alt=""
+                  />
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/aa2b8f70-5c85-11ec-ae75-df2bef173be2-m.svg"
+                    alt=""
+                  />
+                  <h6 class="lead">Tarjetas de Debito</h6>
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/312238e0-571b-11e8-823a-758d95db88db-m.svg"
+                    alt=""
+                  />
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/157dce60-571b-11e8-95d8-631c1a9a92a9-m.svg"
+                    alt=""
+                  />
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/cb0af1c0-f3be-11eb-8e0d-6f4af49bf82e-m.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-9 justify-content-end text-center">
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#heladeraWirpoolModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100"
+                      src="../img/Electrodomesticos/heladera.webp"
+                      class="img-fluid rounded-start"
+                      alt="Heladera Wirpool"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Heladera Whirlpool Wro85ak Inverter Sucesora De La Wro80k2
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$187.899</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 2 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="heladeraWirpoolModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                  Heladera Whirlpool Wro85ak Inverter Sucesora De La Wro80k2
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Electrodomesticos/heladera.webp"
+                                    alt="Celular RedmiNote"
+                                  />
+                                    <ul>
+                                        <li>
+                                            Capacidad 360 lts.<br>
+                                            •Color blanco.<br>
+                                            •Sistema cíclico.<br>
+                                            •2 puertas.<br>
+                                            •Descongelamiento automático en el refrigerador.<br>
+                                            •Regillas que soportan hasta 30 Kg.<br>
+                                            •Motor con categoría CLIMA "T" tropicalizado, eficiente en climas calurosos hasta 43°
+                                            Estantes y rejillas removibles
+                                            Patitas regulables.
+                                            Garantía de un año
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#CocinaModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-75"
+                      src="../img/Electrodomesticos/cocina.webp"
+                      class="img-fluid rounded-start"
+                      alt="Samsung S22"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Cocina Escorial Candor gas natural 4 hornallas blanca puerta con visor 52.6L
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$236.699</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 1 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="CocinaModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                  Cocina Escorial Candor gas natural 4 hornallas blanca puerta con visor 52.6L
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Celulares/SamsungS22.webp"
+                                    alt="Samsung S22+"
+                                  />
+
+                                  <p>
+                                    El Samsung Galaxy S22+ es la variante más grande del S22. Con una pantalla AMOLED de 6.6 pulgadas a resolución FHD+ y tasa de refresco de 120Hz, el Galaxy S22+ está potenciado por un procesador Snapdragon 8 Gen 1 o un Exynos 2200 dependiendo de la región, con 8GB de RAM y hasta 256GB de almacenamiento interno no expandible. La cámara principal del Galaxy S22+ es de 50MP y es complementada por una ultrawide de 12MP y una telefoto de 10MP con OIS, zoom 3x y IA. La cámara selfie en tanto es de 10MP. El Galaxy S22+ cuenta con una batería de 4500 mAh de carga rápida y completa sus características con parlantes stereo, certificación IP68 de resistencia al polvo y agua, lector de huellas bajo la pantalla y Android 12 con la interfaz One UI 4.1.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#hornoElectricoModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Electrodomesticos/hotnoElectrico.webp"
+                      class="img-fluid rounded-start"
+                      alt="Samsung A24"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Yelmo YL-45AN - 220V - Azul oscuro
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$129.999</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 3 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="hornoElectricoModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                  Yelmo YL-45AN - 220V - Azul oscuro
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                      class="w-100"
+                                      src="../img/Electrodomesticos/hotnoElectrico.webp"
+                                      class="img-fluid rounded-start"
+                                      alt="Samsung A24"
+                                      />
+                                  <p>
+                                    El Samsung Galaxy A24 es un smartphone
+                                    Android con una pantalla Super AMOLED de 6.5
+                                    pulgadas a resolución FHD+ y tasa de
+                                    refresco de 90Hz, y potenciado por un
+                                    procesador Helio G99 de MediaTek con 6GB o
+                                    8GB de memoria RAM y 128GB de almacenamiento
+                                    interno expandible. La cámara trasera del
+                                    Galaxy A24 está compuesta por un sensor
+                                    principal de 50MP con OIS más una cámara
+                                    ultrawide de 5MP y una macro de 2MP, con una
+                                    cámara selfie de 13MP al frente. El Galaxy
+                                    A24 se alimenta de una batería de 5000 mAh
+                                    con soporte para carga rápida, tiene lector
+                                    de huellas lateral y corre One UI 5.1 basado
+                                    en Android 13.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#Horno2Modal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Electrodomesticos/horno2.webp"
+                      class="img-fluid rounded-start"
+                      alt="Iphone13"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Horno Electrico 110 Lts Ultracomb Uc-110cln Grill Conveccion
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$584.999</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 1 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="Horno2Modal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                  Horno Electrico 110 Lts Ultracomb Uc-110cln Grill Conveccion
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Celulares/iphone13.webp"
+                                    alt="iPhone13"
+                                  />
+
+                                  <p>
+                                    El Apple iPhone 13 Pro Max mejora a su predecesor con una tasa de refresco de pantalla de 120Hz, el nuevo procesador Apple A15 Bionic y mejoras en sus cámaras. Con una pantalla OLED de 6.7 pulgadas a resolución FHD+, el iPhone 13 Pro Max está disponible con opciones de almacenamiento de 128GB, 256GB, 512GB y 1TB. La cámara cuádruple llega con tres lentes de 12MP y un sensor ToF 3D que integra estabilización óptica de imagen y zoom 3x, y su cámara selfie es de 12MP. El iPhone 13 Pro Max cuenta con parlantes stereo, Face ID para seguridad, resistencia IP68 al polvo y agua, y carga rápida e inalámbrica.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#MicroHondasModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Electrodomesticos/microhondas.webp"
+                      class="img-fluid rounded-start"
+                      alt="microhondas"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Microondas Bgh Eco Negro Digital 20 Litros B120dn20
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$199.999</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 3 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="MicroHondasModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                  Microondas Bgh Eco Negro Digital 20 Litros B120dn20
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-100"
+                                    src="../img/Electrodomesticos/microhondas.webp"
+                                    alt="Samsung Fe"
+                                  />
+
+                                  <ul>
+                                    <li>Potencia de 700w</li>
+                                    <li>Display digital</li>
+                                    <li>Dimensiones: 440mm de ancho, 259mm de alto, 337mm de profundidad.</li>
+                                    <li>Cuenta con bloqueo de seguridad.</li>
+                                    <li>Con descongelado automático por peso.</li>
+                                    <li>Modo rápido de descongelado por tiempo</li>
+                                    <li>Encontrá en sus 6 programas la función indicada para tus comidas.</li>
+                                  </ul>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#aireModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Electrodomesticos/aireAcondicionado.webp"
+                      class="img-fluid rounded-start"
+                      alt="aireAcondicionado"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Aire acondicionado Daikin FTXN mini split inverter frío/calor 2932 frigorías blanco 220V
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$249.999</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 3 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="aireModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                  Aire acondicionado Daikin FTXN mini split inverter frío/calor 2932 frigorías blanco 220V
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Electrodomesticos/aireAcondicionado.webp"
+                                    alt="aireAcondicionado"
+                                  />
+
+                                  <p>
+                                    Climatizar tus espacios a lo largo del año es algo importante para tu comodidad. Un aire acondicionado frío/calor Daikin FTXN es la mejor decisión, ya que conseguís una mejor relación costo-beneficio.
+
+Diseño adecuado a tus espacios
+Contar con un mini split es adecuar tus necesidades de climatización al diseño y disponibilidad de tus espacios. Es un equipo compacto que se coloca en cualquier rincón de tu hogar con facilidad.
+
+Reducción de humedad y temperatura constante
+El deshumidificador absorbe el agua del aire y disminuye la molesta humedad, creando un ambiente confortable y de calidad.
+La tecnología inverter mejora la eficiencia de tu equipo, potencia su capacidad de refrigeración y proporciona una temperatura más estable.
+
+Programá de acuerdo a tus necesidades
+Cuando las personas descansan su temperatura corporal baja gradualmente. Por eso, este aire cuenta con la función sleep, que hace que la temperatura del ambiente aumente a medida que pasa el tiempo. No tendrás que levantarte a apagarlo y podrás disfrutar de un sueño placentero.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-sm-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#lavarropaModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Electrodomesticos/lavarropa.webp"
+                      class="img-fluid rounded-start"
+                      alt="Lavarropa"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Lavarropas automático Samsung WW70A4000 inverter blanco 7kg 220 V - 240 V
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$50.999</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 3 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="lavarropaModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                  Lavarropas automático Samsung WW70A4000 inverter blanco 7kg 220 V - 240 V
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Electrodomesticos/lavarropa.webp"
+                                    alt="moto e13"
+                                  />
+
+                                  <p>
+                                    Samsung apuesta por la innovación y el diseño de vanguardia en los productos de su línea blanca. Ofrece soluciones para el lavado que priorizan la eficiencia de cada uno de sus programas y con ello, el cuidado de tus prendas más delicadas.
+
+Trabaja solo
+Únicamente necesita que se introduzcan los productos de limpieza y se elija el programa deseado. A diferencia de los semiautomáticos, no requiere que estés presente en todas las etapas del proceso, por lo que vas a tener prendas limpias y perfumadas sin esfuerzo.
+
+Tecnología inverter
+Reduce el ruido y las vibraciones, aún en velocidad máxima de centrifugado. A su vez, requiere un menor consumo de agua y electricidad.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="bg-dark position-relative z-3 box-lg">
+      <div class="container">
+        dsadasdas
+        dsadasdasdsadas
+        dsadasdas
+      </div>
+    </footer>
+
+
+    <section id="Modales">
+      <article>
+        <div id="modalDelInicio">
+          <div
+            class="modal fade"
+            id="inicioModal"
+            tabindex="-1"
+            aria-labelledby="inicioModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="inicioModalLabel">
+                    <h2 class="fw-bold text-center pt-5 mb-5">Bievenido</h2>
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <div class="row">
+                      <div class="col">
+                        <form action="">
+                          <div class="">
+                            <label for="email" class="form-label">
+                              Correo Electronico</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="password" class="form-label">
+                              Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control mb-2"
+                              name="password"
+                            />
+                            <span class=""
+                              ><a href="#">Recuperar password</a></span
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="checkbox"
+                              name="conexion"
+                              class="form-check-input"
+                            />
+                            <label for="conexion" class="form-check-label"
+                              >Mantenerme conectado</label
+                            >
+                          </div>
+
+                          <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                              Iniciar sesion
+                            </button>
+                          </div>
+                          <div class="my-3">
+                            <span
+                              >No tienes cuenta ?
+                              <a href="#">Registrate</a></span
+                            >
+                          </div>
+                        </form>
+                        <!-- Login con redes sociales -->
+                        <div class="container w-100 my-5">
+                          <div class="row text-center">
+                            <div class="col-12">Inciar Sesion</div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="d-flex justify-content-center gap-2">
+                                <button
+                                  class="btn btn-outline-primary my-1"
+                                  id="redesButton"
+                                >
+                                  <div class="row align-items-center">
+                                    <div class="col-2">
+                                      <i class="bi bi-facebook logoFace"></i>
+                                    </div>
+                                    <div
+                                      class="col-10 fw-bold mt-3 align-content-center"
+                                    >
+                                      <p class="">Facebook</p>
+                                    </div>
+                                  </div>
+                                </button>
+
+                                <button
+                                  class="btn btn-outline-danger my-1"
+                                  id="redesButton"
+                                >
+                                  <div class="row align-items-center">
+                                    <div class="col-2">
+                                      <i class="bi bi-google logoFace"></i>
+                                    </div>
+                                    <div
+                                      class="col-10 fw-bold mt-3 align-content-center"
+                                    >
+                                      <p class="">Google</p>
+                                    </div>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Login -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeUbicacion">
+          <div
+            class="modal fade"
+            id="mapModalLabel"
+            tabindex="-1"
+            aria-labelledby="mapModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="mapModalLabel">Ubicacion</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h3>San miguel de tucuman, 25 de mayo 755</h3>
+                  <div>
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe
+                          width="820"
+                          height="560"
+                          id="gmap_canvas"
+                          src="https://maps.google.com/maps?q=tucuman%2C+25+de+mayo+775&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                          frameborder="0"
+                          scrolling="no"
+                          marginheight="0"
+                          marginwidth="0"
+                        ></iframe
+                        ><a href="https://textcaseconvert.com/"></a><br />
+                        <style>
+                          .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 360px;
+                            width: 420px;
+                          }</style
+                        ><a href="https://www.embedmaps.co"
+                          >embed google maps api</a
+                        >
+                        <style>
+                          .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 360px;
+                            width: 420px;
+                            border-radius: 50%;
+                          }
+                        </style>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeLikes">
+          <div
+            class="modal fade"
+            id="likeModal"
+            tabindex="-1"
+            aria-labelledby="likeModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="likeModalLabel">
+                    Agregue a favoritos
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <h2>Algo te llama la atencion ?</h2>
+                    <p>Guardalo en favoritos</p>
+                    <p>Crea un panel de estados de animo</p>
+                    <p>verlo todo junto</p>
+                    <img
+                      src="https://images.crateandbarrel.com/is/image/Crate/CB_HDR-201707_Mdbrd-dd?fmt=png-alpha"
+                      alt=""
+                    />
+                    <p>
+                      Inicia sesion para ver todo lo que te gusta
+                      <button type="button" class="btn btn-secondary">
+                        Iniciar Session
+                      </button>
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeCompras">
+          <div
+            class="modal fade"
+            id="buyModal"
+            tabindex="-1"
+            aria-labelledby="buyModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="buyModalLabel">
+                    Agregar al Carrito
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Le faltan articulos en su carrito ?</h3>
+                  <p>
+                    <a href="#">Registrese</a> para ver los elementos que puede
+                    haber agregado usando otra computadora o dispositivo
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    Ver Carrito
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

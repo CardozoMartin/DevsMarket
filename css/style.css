@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,600&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+body{
+    background-color: #afb0b1;
+    font-family: 'EB Garamond', serif;
+}
+main{
+    margin-top: 8rem;
+}
+header {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    top: -10px;
+    position: fixed;
+    z-index: 100;
+  }
+.fFami{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 45px;
+}
+.hover-Search:hover{
+    border-color: #f70455;
+}
+.hover-Search:focus{
+    box-shadow: #f70455;
+ }
+
+.carousel-inner img{
+    height: 250px;
+
+width: 250px;
+
+object-fit: cover;
+}
+.searchNav{
+    padding: 10px;
+    color: #000;
+}
+
+.btnIcon:hover{
+    border: 1px solid #000;
+    border-bottom: 1px solid #f70455;
+    color:  #f70455;
+}
+
+#secondNav{
+    background-color: #000;
+    height: 50px;
+}
+.activeItems{
+    color: #fff!important;
+}
+.activeItems:hover{
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+#navOn{
+    display: none;
+}
+.btnSearch{
+    border: 1px solid #000;
+    border-radius: none;
+}
+.btnSearch:hover{
+    border: 1px solid #000;
+ }
+
+ .focusItem:hover{
+    background-color: #000;
+    color: #fff;
+ }
+
+.logoFace{
+    font-size: 40px;
+}
+.sizeFace{
+    font-size: 1.5rem;
+}
+#redesButton{
+    width: 200px;
+    height: 70px;
+}
+
+.textColor{
+    color: #afb0b1;
+}
+.CurPoint{
+    cursor: pointer;
+
+    
+}
+
+
+.cardPosition{
+    top: 22rem;
+}
+
+
+.carruselTam{
+    width: 100%;
+    height: 250px;
+}
+.imgSize{
+    object-fit: fill;
+}
+.iconColor{
+    color: #f70455;
+}
+
+.hoverList:hover{
+    font-weight: bold;
+    background-color: #afb0b125;
+}
+
+
+
+
+
+@media screen and (max-width: 991px){ 
+    #navOn{
+        display: block;
+    }
+    #navOff{
+        display: none;
+    }
+    #secondNav{
+        display: none;
+    }
+    .cardPosition{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 571px){ 
+
+    .cardPosition{
+        display: none;
+    }
+}
+

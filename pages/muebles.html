@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/48c3d8cc55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="fixed mb-5">
+      <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navOff">
+          <div class="searchNav">
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2 hover-Search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+
+          <div class="text-center d-flex">
+            <div>
+              <h2 class="mx-5 fFami">Dev<span class="iconColor">$</span>Market</h2>
+            </div>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown m-2">
+                <button
+                  class="nav-link d-inline dropdown-toggle  btnIcon btn fs-4"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-current="page"
+                  href="#"
+                >INICIO</button
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  <li><a class="dropdown-item" href="#">Iniciar Session</a></li>
+                  <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                </ul>
+              </li>
+              <li class="nav-item m-2 iconModal">
+                <div class="dropdown viewerOff">
+                  <button
+                    type="button"
+                    class="btn btnIcon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#inicioModal"
+                  >
+                    <i class="bi bi-person-circle fs-3"></i>
+                  </button>
+                </div>
+              </li>
+              <li class="nav-item m-2 iconModal">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mapModalLabel"
+                >
+                  <i class="bi bi-geo-alt-fill px-2 fs-3"></i>
+                </button>
+              </li>
+              <li class="nav-item m-3">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#likeModal"
+                >
+                  <i class="fa-sharp fa-solid fa-heart px-2 fs-3"></i>
+                </button>
+              </li>
+              <li class="nav-item m-3">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buyModal"
+                >
+                  <i class="fa-sharp fa-solid fa-cart-shopping px-2 fs-3"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Segunda Linea del nav -->
+        </nav>
+        <article id="secondNav">
+          <ul class="nav justify-content-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Celulares</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Samsung</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Motorola</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Alcatel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Noblex</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Iphone</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Redmi</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./celulares.html"
+                    >Todas las Marcas</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle activeItems"
+                aria-current="page"
+                href="./computadoras.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Computadoras</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Lenovo</a></li>
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Apple</a></li>
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Samsung</a></li>
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Asus</a></li>
+                <li><a class="dropdown-item focusItem" href="./computadoras.html">Lg</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  dropdown-toggle activeItems"
+                aria-current="page"
+                href="./electrodomestivos.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Electrodomesticos</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Heladeras</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Cocina</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Larropas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Calefaccion</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item focusItem"
+                    href="./electrodomestivos.html"
+                    >Termotanques</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  dropdown-toggle activeItems"
+                aria-current="page"
+                href="./muebles.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Muebles</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="./muebles.html">Comedor</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./muebles.html">Sillones</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="./muebles.html">Roperos</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./muebles.html">Escritorios</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle activeItems"
+                aria-current="page"
+                href="./indumentaria.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Indumentaria</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="./indumentaria.html">Remeras</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./indumentaria.html">Pantalones</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="./indumentaria.html">Camisas</a></li>
+                <li><a class="dropdown-item focusItem" href="./indumentaria.html">Gorras</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./indumentaria.html">Zapatillas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  dropdown-toggle activeItems"
+                aria-current="page"
+                href="./herramientas.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Herramientas</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item focusItem" href="./herramientas.html">Taladro</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./herramientas.html">Amoladora</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="./herramientas.html">Llaves</a></li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./herramientas.html">Escaleras</a>
+                </li>
+                <li><a class="dropdown-item focusItem" href="./herramientas.html">Mar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  dropdown-toggle activeItems"
+                aria-current="page"
+                href="./juegos.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Juegos</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item focusItem" href="./juegos.html">Juegos de Ps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./juegos.html">Consolas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./juegos.html"
+                    >Accesorios Gamers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item focusItem" href="./juegos.html"
+                    >Juegos de Mesas</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <article class="navbar navbar-expand-lg bg-body-tertiary" id="navOn">
+          <article>
+            <nav class="navbar bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand   fs-1 " href="../index.html"
+                  >Dev<span class="iconColor ">$</span>Market</a
+                >
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btnIcon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#inicioModal"
+                  ><i class="bi bi-person-circle fs-1"></i
+                ></a>
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btnIcon justify-content-end"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mapModalLabel"
+                  ><i class="bi bi-geo-alt-fill fs-1"></i
+                ></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      Dev<span class="iconColor">$</span>Market
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mobilMenu">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active hoverList"
+                          aria-current="page"
+                          href="./celulares.html"
+                          >Celulares</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./computadoras.html"
+                          >Computadoras</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./electrodomestivos.html"
+                          >Electrodomesticos</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./muebles.html"
+                          >Muebles</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./indumentaria.html"
+                          >Indumentaria</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./herramientas.html"
+                          >Herramientas</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link  hoverList"
+                          aria-current="page"
+                          href="./juegos.html"
+                          >Juegos</a
+                        >
+                      </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-success" type="submit">
+                        Search
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </article>
+        </article>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <article class="container justify-content-center">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide mb-3"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner carruselTam">
+              <div class="carousel-item active">
+                <img
+                  src="https://cb.scene7.com/is/image/Crate/cb_dHP_20230531_Bedroom?wid=1440&qlt=80&op_sharpen=1"
+                  class="d-block w-100 imgSize"
+                  alt="Banner de samsung"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/Banners/sillones.webp"
+                  class="d-block w-100"
+                  alt="motorola banner"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/Banners/mueblesOfertas.png"
+                  class="d-block w-100"
+                  alt="iphone banner"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+      </section>
+      <section class="container">
+        <article class="row justify-content-end box">
+          <div class="col-lg-3 col-xs-0">
+            <div class="card position-sticky cardPosition">
+              <div class="card">
+                <div class="card-body">
+                  <p class="text-success">
+                    <i class="bi bi-box2"></i> Envio Gratis a todo el pais
+                  </p>
+                  <h6 class="lead">Hasta 12 Cuotas sin tarjeta</h6>
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/51b446b0-571c-11e8-9a2d-4b2bd7b1bf77-m.svg"
+                    alt=""
+                  />
+                  <h6 class="lead">Tarjetas de Credito</h6>
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/a5f047d0-9be0-11ec-aad4-c3381f368aaf-m.svg"
+                    alt=""
+                  />
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/992bc350-f3be-11eb-826e-6db365b9e0dd-m.svg"
+                    alt=""
+                  />
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/aa2b8f70-5c85-11ec-ae75-df2bef173be2-m.svg"
+                    alt=""
+                  />
+                  <h6 class="lead">Tarjetas de Debito</h6>
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/312238e0-571b-11e8-823a-758d95db88db-m.svg"
+                    alt=""
+                  />
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/157dce60-571b-11e8-95d8-631c1a9a92a9-m.svg"
+                    alt=""
+                  />
+                  <img
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/cb0af1c0-f3be-11eb-8e0d-6f4af49bf82e-m.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-9 justify-content-end text-center">
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#sillasModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100"
+                      src="../img/Sillas/sillas.webp"
+                      class="img-fluid rounded-start"
+                      alt="Sillas"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Set X2 Silla Comedor Eames Living Diseño Moderno Madera
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$19.790</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 2 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="sillasModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                    Heladera Whirlpool Wro85ak Inverter Sucesora
+                                    De La Wro80k2
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Sillas/sillas.webp"
+                                    alt="Sillas"
+                                  />
+                                  <p>
+                                    SET X2 SILLA EAMES CALIDAD PREMIUM (ENTREGA
+                                    INMEDIATA) ***** VIENE DESARMADA, TRAE SUS
+                                    HERRAMIENTAS PARA FACIL ARMADO *****
+                                    CARACTERISTICAS: - Diseño moderno -
+                                    Polipropileno resistente - Base de madera y
+                                    hierro MEDIDAS: - Altura de la silla: 82 cm
+                                    - Ancho de la silla: 46 cm - Altura del
+                                    asiento desde el piso: 46 cm - Peso máximo
+                                    soportado: 120 Kg
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#sillonesModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Sillas/sillones.webp"
+                      class="img-fluid rounded-start"
+                      alt="Sillon"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Sillon Sofa De 2 Cuerpos Premium 1.20 Mts
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$57.804</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 1 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="sillonesModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                    Sillon Sofa De 2 Cuerpos Premium 1.20 Mts
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Sillas/sillones.webp"
+                                    alt="Sillon"
+                                  />
+
+                                  <p>
+                                    DESCRIPCION PRODUCTO. - Estructura: MADERA
+                                    MACIZA 1" (saligna) Sin cepillar c/
+                                    Refuerzos, recubierto en su TOTALIDAD con
+                                    ESPUMA 2CM. - Asiento y Respaldo: SUNCHOS DE
+                                    CAUCHO entrelazados + Tela ALPILLERA
+                                    Sintética - Almohadones Respaldo (Funda
+                                    interna): FRISELINA 65g + VELLON SILICONADO
+                                    (85%) + COPOS (15%). - Almohadones Asiento:
+                                    PLACA ALTA DENSIDAD 22 KG, envueltos en
+                                    GUATA SOFT - ( ALTURA 14cm ) - Terminación:
+                                    CIERRE en todos los almohadones y costura
+                                    INVISIBLE. - APOYABRAZOS.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#escritorioModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Sillas/escritorioGrande.webp"
+                      class="img-fluid rounded-start"
+                      alt="Escritorio"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Escritorio Grande Oficina Mesa Con Cajon Gamer | Mite
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$41.799</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 3 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="escritorioModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                    Escritorio Grande Oficina Mesa Con Cajon
+                                    Gamer | Mite
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="w-100"
+                                    src="../img/Electrodomesticos/hotnoElectrico.webp"
+                                    class="img-fluid rounded-start"
+                                    alt="Samsung A24"
+                                  />
+                                  <p>
+                                    ESPECIFICACIONES ESCRITORIO DE FACIL ARMADO,
+                                    SIN HERRAMIENTAS. CON SISTEMA DE ENCASTRE ®
+                                    LOS REGATONES ESTÁN SUJETOS A
+                                    DISPONIBILIDAD, SON DE DISEÑO EXCLUSIVO.
+                                    MEDIDAS: 120CM X 80CM X 76CM (FRENTE x
+                                    PROFUNDIDAD x ALTURA). GAVETAS: 40 x 35
+                                    (largo x ancho) ALTURA: 6cm MODELO
+                                    DISPONIBLE TAMBIÉN CON DOS CAJONES O SIN
+                                    CAJONES, CONSULTAR
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#chifonierModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-75 mt-5"
+                      src="../img/Sillas/chifonier.webp"
+                      class="img-fluid rounded-start"
+                      alt="cajonera"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Cajonera Chifonier Con Puerta 6 Cajones Madera 40 X 60
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$25.599</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 1 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="Horno2Modal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                    Cajonera Chifonier Con Puerta 6 Cajones
+                                    Madera 40 X 60
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Sillas/chifonier.webp"
+                                    alt="cajonera"
+                                  />
+
+                                  <p>
+                                    Chifonier de 6 cajones con puerta de madera
+                                    de pino de alta calidad. Lijada y lista para
+                                    pintar del color que desees. Medidas: Largo:
+                                    110cm Ancho: 85 cm Profundidad: 39 cm
+                                    Cantidad de cajones: 6 Marca: Sajo Modelo:
+                                    Chifonier con puerta 6 cajones Material:
+                                    Pino Color: Natural-Roble-Cedro-Negro-Nogal
+                                    .Los productos son teñidos, exceptuado el
+                                    natural que se envía sin teñir. Se
+                                    recomienda barnizar. .Las manijas se envían
+                                    sin colocar.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#placarModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Sillas/placard.webp"
+                      class="img-fluid rounded-start"
+                      alt="Placard"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Placard Carpintería Rivadavia Delta 240DELTA color
+                        blanco con 2 puertas corredizas
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$199.999</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 3 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="placarModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                    Placard Carpintería Rivadavia Delta 240DELTA
+                                    color blanco con 2 puertas corredizas
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-100"
+                                    src="../img/Electrodomesticos/microhondas.webp"
+                                    alt="Samsung Fe"
+                                  />
+
+                                  <p>
+                                    El orden de nuestro hogar nos brinda
+                                    comodidad y bienestar. Este placar de
+                                    Carpintería Rivadavia ofrece la calidad y el
+                                    diseño que necesitás para cuidar tu ropa y
+                                    mantener tu dormitorio arreglado.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#Placard2Modal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Sillas/placard2.webp"
+                      class="img-fluid rounded-start"
+                      alt="Placard"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Placard Máximo Fortaleza 6P 3C color chocolate/maple de
+                        melamina con 6 puertas batientes
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$83.941</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 3 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="Placard2Modal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                    Placard Máximo Fortaleza 6P 3C color
+                                    chocolate/maple de melamina con 6 puertas
+                                    batientes
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Sillas/placard2.webp"
+                                    alt="Placard"
+                                  />
+
+                                  <p>
+                                    El orden de nuestro hogar nos brinda
+                                    comodidad y bienestar. Este placar de Máximo
+                                    ofrece la calidad y el diseño que necesitás
+                                    para cuidar tu ropa y mantener tu dormitorio
+                                    arreglado. Resistencia y durabilidad Este
+                                    placar fabricado en melamina es una
+                                    excelente opción si buscás un mueble de alta
+                                    durabilidad y resistente a posibles daños
+                                    ocasionados por la humedad y los animales.
+                                    Este material prácticamente no se raya y es
+                                    muy fácil de limpiar ya que soporta
+                                    diferentes agentes químicos como el
+                                    detergente y no absorbe el agua.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="">
+              <div
+                class="card text-sm-center mb-3 shadow CurPoint"
+                data-bs-toggle="modal"
+                data-bs-target="#muebleDeTvModal"
+                style="max-width: 1200px"
+              >
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      class="w-100 mt-5"
+                      src="../img/Sillas/muebleDeTv.webp"
+                      class="img-fluid rounded-start"
+                      alt="Mueble de television"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="badge bg-primary text-white">Ahora 12</div>
+                      <h5 class="card-title">
+                        Mueble De Tv Modular Rack Estante
+                      </h5>
+                      <p class="card-text"></p>
+                      <p class="card-text fw-bold fs-4">$26.010</p>
+
+                      <p
+                        class="card-text shadow textColor mt-1 bg-success badge"
+                      >
+                        Llega gratis mañana
+                      </p>
+                      <p class="small text-black mb-2">
+                        Disponible en 3 Colores
+                      </p>
+                      <div
+                        class="card-footer p-1 pt-0 border-top-0 bg-transparent"
+                      >
+                        <div>
+                          <div
+                            class="modal fade"
+                            id="muebleDeTvModal"
+                            tabindex="-1"
+                            aria-labelledby="itemsModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="itemsModalLabel"
+                                  >
+                                    Mueble De Tv Modular Rack Estante
+                                  </h1>
+
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <img
+                                    class="card-img-top w-50"
+                                    src="../img/Sillas/muebleDeTv.webp"
+                                    alt="Mueble de television"
+                                  />
+
+                                  <p>
+                                    Resolvé tus necesidades de entretenimiento
+                                    .Ya sea que estés viendo el partido o
+                                    escuchar música esta mesa es la mejor opción
+                                    para tu espacio. Este mueble es apto para
+                                    una tv de hasta 41". Características del
+                                    producto: • Marca: Máximo Entretenimiento •
+                                    Modelo: Rack Siena • Material: aglomerado
+                                    con texturado final • Lustre texturado • 2
+                                    estantes asimétricos • 1 puerta • Medidas
+                                    Alto: 67.7cm Ancho: 110 cm Profundo: 36 cm •
+                                    Color: a elección • Espesor de las placas
+                                    15mm. El producto se despacha en 1 caja:
+                                    Caja 1: 112 cm de Largo x 38 cm de Ancho x
+                                    12 cm de Alto, el peso es de 24 kg. El peso
+                                    total del producto armado es de 24 kg.
+                                  </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    volver
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Comprar
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+            
+          </div>           
+        </article>
+        
+      </section>
+    </main>
+
+   
+
+    <footer class="bg-dark position-relative z-3 box-lg">
+      <div class="container">dsadasdas dsadasdasdsadas dsadasdas</div>
+    </footer>
+
+
+    <section id="Modales">
+      <article>
+        <div id="modalDelInicio">
+          <div
+            class="modal fade"
+            id="inicioModal"
+            tabindex="-1"
+            aria-labelledby="inicioModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="inicioModalLabel">
+                    <h2 class="fw-bold text-center pt-5 mb-5">Bievenido</h2>
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <div class="row">
+                      <div class="col">
+                        <form action="">
+                          <div class="">
+                            <label for="email" class="form-label">
+                              Correo Electronico</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="password" class="form-label">
+                              Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control mb-2"
+                              name="password"
+                            />
+                            <span class=""
+                              ><a href="#">Recuperar password</a></span
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="checkbox"
+                              name="conexion"
+                              class="form-check-input"
+                            />
+                            <label for="conexion" class="form-check-label"
+                              >Mantenerme conectado</label
+                            >
+                          </div>
+
+                          <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                              Iniciar sesion
+                            </button>
+                          </div>
+                          <div class="my-3">
+                            <span
+                              >No tienes cuenta ?
+                              <a href="#">Registrate</a></span
+                            >
+                          </div>
+                        </form>
+                        <!-- Login con redes sociales -->
+                        <div class="container w-100 my-5">
+                          <div class="row text-center">
+                            <div class="col-12">Inciar Sesion</div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="d-flex justify-content-center gap-2">
+                                <button
+                                  class="btn btn-outline-primary my-1"
+                                  id="redesButton"
+                                >
+                                  <div class="row align-items-center">
+                                    <div class="col-2">
+                                      <i class="bi bi-facebook logoFace"></i>
+                                    </div>
+                                    <div
+                                      class="col-10 fw-bold mt-3 align-content-center"
+                                    >
+                                      <p class="">Facebook</p>
+                                    </div>
+                                  </div>
+                                </button>
+
+                                <button
+                                  class="btn btn-outline-danger my-1"
+                                  id="redesButton"
+                                >
+                                  <div class="row align-items-center">
+                                    <div class="col-2">
+                                      <i class="bi bi-google logoFace"></i>
+                                    </div>
+                                    <div
+                                      class="col-10 fw-bold mt-3 align-content-center"
+                                    >
+                                      <p class="">Google</p>
+                                    </div>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Login -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeUbicacion">
+          <div
+            class="modal fade"
+            id="mapModalLabel"
+            tabindex="-1"
+            aria-labelledby="mapModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="mapModalLabel">Ubicacion</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h3>San miguel de tucuman, 25 de mayo 755</h3>
+                  <div>
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe
+                          width="820"
+                          height="560"
+                          id="gmap_canvas"
+                          src="https://maps.google.com/maps?q=tucuman%2C+25+de+mayo+775&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                          frameborder="0"
+                          scrolling="no"
+                          marginheight="0"
+                          marginwidth="0"
+                        ></iframe
+                        ><a href="https://textcaseconvert.com/"></a><br />
+                        <style>
+                          .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 360px;
+                            width: 420px;
+                          }</style
+                        ><a href="https://www.embedmaps.co"
+                          >embed google maps api</a
+                        >
+                        <style>
+                          .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 360px;
+                            width: 420px;
+                            border-radius: 50%;
+                          }
+                        </style>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeLikes">
+          <div
+            class="modal fade"
+            id="likeModal"
+            tabindex="-1"
+            aria-labelledby="likeModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="likeModalLabel">
+                    Agregue a favoritos
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <h2>Algo te llama la atencion ?</h2>
+                    <p>Guardalo en favoritos</p>
+                    <p>Crea un panel de estados de animo</p>
+                    <p>verlo todo junto</p>
+                    <img
+                      src="https://images.crateandbarrel.com/is/image/Crate/CB_HDR-201707_Mdbrd-dd?fmt=png-alpha"
+                      alt=""
+                    />
+                    <p>
+                      Inicia sesion para ver todo lo que te gusta
+                      <button type="button" class="btn btn-secondary">
+                        Iniciar Session
+                      </button>
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalDeCompras">
+          <div
+            class="modal fade"
+            id="buyModal"
+            tabindex="-1"
+            aria-labelledby="buyModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="buyModalLabel">
+                    Agregar al Carrito
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Le faltan articulos en su carrito ?</h3>
+                  <p>
+                    <a href="#">Registrese</a> para ver los elementos que puede
+                    haber agregado usando otra computadora o dispositivo
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    Ver Carrito
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
